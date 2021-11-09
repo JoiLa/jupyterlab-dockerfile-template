@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  anaconda-jupyterlab-server:
+    image: liang/anaconda-jupyterlab-plugin:1.0
+    restart: always
+    volumes:
+      - /opt/docker-anaconda/root:/work
+    ports:
+      - 8800:8888
