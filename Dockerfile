@@ -5,7 +5,7 @@ MAINTAINER liang <liang@lilogs.com>
 RUN apt-get update
 # 安装软件源
 
-RUN apt-get install wget vim curl-y
+RUN apt-get install wget vim curl -y
 
 # `conda` 更新
 RUN conda update -n base -c defaults conda -y
